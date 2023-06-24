@@ -1,0 +1,149 @@
+
+
+
+.banner > .image{
+  width:100%;
+  height:600px;
+  background-image: linear-gradient(to right, rgba(73, 21, 21, 0.596), rgba(20, 20, 20, 0.849)), url('https://post.healthline.com/wp-content/uploads/2018/04/steak-meat-1200x628-facebook-1200x628.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.container > h2{
+  font-family: 'Bona Nova', serif;
+}
+
+.container{
+  margin: 0 auto;
+  
+}
+
+
+
+.restaurant-heading{
+font-family: 'Bona Nova', serif;
+
+}
+
+
+.restaurant-picture{
+  width:400px;
+  height:400px;
+  background-image: url('https://cdn.sortiraparis.com/images/1001/100789/834071-too-restaurant-too-hotel-paris-photos-menu-entrees.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.restaurant-information{
+  width:600px;
+  height:auto;
+}
+
+.restaurant-information > p, ul{
+font-style: italic;
+font-weight:500;
+font-size:20ppx;
+}
+
+.choose{
+  font-style: italic;
+  font-weight:500;
+  height:auto;
+  background-color: rgb(230, 230, 230);
+}
+
+.mini-block{
+  padding:15px;
+}
+
+.specials{
+  font-style: italic;
+  font-weight:600;
+}
+
+.btn-group{
+  width:300px;
+ 
+}
+
+.btn{
+ outline:none !important;
+box-shadow:none !important; 
+
+}
+
+.text-box{
+  width:700px;
+  margin-left:100px;
+}
+
+.responsive-image{
+  width:250px;
+  height:250px;
+  border:1px solid black;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIwqiZo-r7-vh5TJAaQy7OEb0cGV1Rq9-QYn33znrQVnQ_UIe9jcNqYfkMwjbZs4_9DTg&usqp=CAU');
+  background-position: center;
+}
+
+.center{
+  display:inline-block;
+  text-align: center;
+
+}
+
+.responsive-image > img{
+  width:250px;
+  height:250px;
+
+}
+
+@media screen and (max-width:991px){
+  .information-box{
+    flex-direction:column;
+    align-items: center;
+    
+  }
+  .restaurant-picture{
+    width:100%;
+    margin-bottom: 50px;
+  }
+
+  .restaurant-information{
+    width:100%;
+    padding-right:20px;
+  }
+
+  .mini-block{
+    text-align: center;
+    padding:10px;
+  }
+
+  .choose{
+    padding:20px;
+  }
+  
+}
+
+
+@media screen and (max-width:1400px){
+ .container-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+  
+  } 
+
+  .text-box{
+    width:100%;
+    margin: 0 auto;
+    
+  }
+
+  .responsive-image > img{
+      margin-left:-48px;
+  }
+  
+}

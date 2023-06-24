@@ -1,0 +1,40 @@
+
+  <h1 class="m-5 text-center">Our specialities</h1>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-5 col-xxl-4 d-flex justify-content-center" *ngFor="let dish of dishes">
+        <div class="card">
+          <img class="card-img-top" [src]="dish.image" alt="Card image cap">
+          <div class="card-body d-flex">
+            <div>
+            <h5 class="card-title">{{dish.name}}</h5>
+            </div>
+            <hr>
+            <div>
+            <p class="card-text">{{dish.description}}</p>
+             </div>
+            <hr>
+             <div>
+            <p class="card-text">{{dish.price | currency}}</p>
+              </div>
+              <hr>
+              <div>
+                <p *ngIf="!dish.availability" class="card-text text-danger">This product is not available</p>
+            <a routerLink="/details">
+              <button class="btn btn-primary me-3"[disabled]="!dish.availability">Details</button>
+            </a>
+          
+            <button (click)="orderDish(dish)" class="btn btn-success" [disabled]="!dish.availability">Order</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  
+</div>
+
+
+
+

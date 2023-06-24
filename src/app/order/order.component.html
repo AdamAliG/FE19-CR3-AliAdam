@@ -1,0 +1,37 @@
+<div class="container d-flex">
+<div class="cart my-5">
+  <div class="background d-flex">
+    <p class="fs-4 p-2">Cart - {{items.length}}</p>
+  </div>
+<div class="loop p-5 d-flex flex-column" *ngFor="let item of items">
+  <div class="wrap d-flex ">
+  <img class="image"[src]="item.image" alt="{{item.name}}"/>
+  <div class="nameItems">
+  <p><strong>{{item.name}}</strong></p>
+  <p>{{item.description}}</p>
+  
+  </div>
+  <p><strong>Price: {{item.price}}</strong></p>
+  
+  
+</div>
+<hr>
+</div>
+</div>
+
+<div class="summary w-25 my-5 ms-5">
+  <div class="background d-flex">
+    <p class="fs-4 p-2">Summary</p>
+  </div>
+
+  <div class="summary-box p-3">
+  <p>Products: {{cartService.getTotal() | currency}}</p>
+  <hr>
+  <p>Service Charge (10%): {{cartService.getServiceCharge() | currency}}</p>
+  <hr>
+  <p>Discount: {{cartService.getDiscount() | currency}}</p>
+  <hr>
+  <p><strong>Total: {{cartService.getFinalTotal() | currency}}</strong></p>
+  </div>
+</div>
+</div>

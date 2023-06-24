@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.product-detail {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.product-title {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-image {
+  width: 50%;
+  height: auto;
+}
+
+.product-price {
+  color: #E91E63;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.product-description {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.product-button {
+  background-color: #3b3b3b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

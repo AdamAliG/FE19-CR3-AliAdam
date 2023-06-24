@@ -1,0 +1,99 @@
+<div class="banner">
+  <div class="image d-flex justify-content-center align-items-center">
+    <div class="center text-light">
+    <h1>Ristorante le Gamgera Rosso</h1>
+  <p>Delivering great food for more than 18 years!</p>
+  <a routerLink="/menu"><button class="btn btn-success me-2">Our Menu</button></a>
+  <button class="btn btn-success">Book a Table</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="my-5 text-center">Ristorante le Gambera Rosso</h2>
+  <div class="information-box d-flex justify-content-center">
+    <div class="restaurant-picture"></div>
+    <div class="restaurant-information ms-5">
+
+      <h4 class="restaurant-heading">Visit our noble restaurant</h4>
+
+      <p class=" fs-5">For an unforgettable National Day 2023, climb over 100 meters to watch the Eiffel Tower fireworks from TOO Restaurant. The evening promises to be as magical as it is gastronomic, as it will be accompanied by a 3-course dinner (€150 per person, excluding drinks) served from 9:15 p.m.</p>
+
+      <ul>
+        <li>Best Restaurant in Paris</li>
+        <li>With decent prices</li>
+        <li>Unforgetable ambiente</li>
+      </ul>
+
+      <p>Eingebettet in das neue TOO Hotel der Gruppe Laurent Taïeb (der wir bereits das neue Madame Rêve verdanken), das sich im 13. Arrondissement von Paris zwischen der BNF und Station F befindet, hat das vor kurzem eröffnete TOO Restaurant einiges zu bieten.</p>
+    
+    </div>    
+  </div>
+
+  
+
+</div>
+
+<div class="choose w-100 py-5 mt-5">
+    <h2 class="text-center ">Why choose us</h2>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit labore nostrum odio dolorum tempore qui in tenetur amet aliquam!</p>
+    <div class="word-block d-flex p-3 justify-content-center">
+    <div class="mini-block">
+      <p>01</p>
+      <h4>Lorem Ipsum</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quo itaque obcaecati laborum quae necessitatibus, blanditiis dolorem reprehenderit magni earum.</p>
+    </div>
+    <div class="mini-block">
+      <p>02</p>
+      <h4>Lorem Ipsum</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quo itaque obcaecati laborum quae necessitatibus, blanditiis dolorem reprehenderit magni earum.</p>
+    </div>
+    <div class="mini-block">
+      <p>03</p>
+      <h4>Lorem Ipsum</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quo itaque obcaecati laborum quae necessitatibus, blanditiis dolorem reprehenderit magni earum.</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="specials p-5">
+    <h2 class="text-center ">Check our specials</h2>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit labore nostrum odio dolorum tempore qui in tenetur amet aliquam!</p>
+
+<div class="container-box d-flex justify-content-center py-5">
+
+    <div class="btn-group d-flex flex-column me-3">
+      <button  [ngClass]="{'bg-primary': selectedButton === 'one', 'text-light': selectedButton === 'one'}" 
+      (click)="handleClick('one', 'https://img.freepik.com/free-photo/thinly-sliced-pepperoni-is-popular-pizza-topping-american-style-pizzerias-isolated-white-background-still-life_639032-229.jpg?w=2000')" class="btn one text-primary fw-bold">Pizza</button>
+
+      <button [ngClass]="{'bg-primary': selectedButton === 'two', 'text-light': selectedButton === 'two'}" 
+      (click)="handleClick('two', 'https://thecozycook.com/wp-content/uploads/2019/08/Bolognese-Sauce-500x500.jpg')" class="btn two text-primary fw-bold">Spagetti</button>
+
+      <button [ngClass]="{'bg-primary': selectedButton === 'three', 'text-light': selectedButton === 'three'}" 
+      (click)="handleClick('three', 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tiramisu_-_Raffaele_Diomede.jpg/800px-Tiramisu_-_Raffaele_Diomede.jpg')" class="btn three text-primary fw-bold">Classic Tiramisu</button>
+
+      <button [ngClass]="{'bg-primary': selectedButton === 'four', 'text-light': selectedButton === 'four'}" 
+      (click)="handleClick('four', 'https://w4s8p5t8.rocketcdn.me/wp-content/uploads/2019/01/vegan-milk-chocolate-recipe.jpg')" class="btn four text-primary fw-bold">Hot chocolate</button>
+
+      <button [ngClass]="{'bg-primary': selectedButton === 'five', 'text-light': selectedButton === 'five'}" 
+      (click)="handleClick('five', 'https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FSeries%2F2021-05-how-to-banana-split%2F2021-05-18_ATK-0453')" class="btn five text-primary fw-bold">Banana split</button>
+    </div>
+
+<div class="responsive-image">
+      <div *ngIf="selectedButton">
+        <img class="responsive-image" [src]="imageSource">
+      </div>
+    </div>
+
+    <div class="text-box me-5">
+      <h4>Architecto ut aperiam autem id</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, magni.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorem accusamus placeat aut ratione corporis qui expedita architecto quo? Cum fugiat culpa maiores minima aut placeat libero, beatae, cupiditate itaque unde assumenda eius ad velit? Esse consectetur maxime vero saepe?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quo itaque obcaecati laborum quae necessitatibus, blanditiis dolorem reprehenderit magni earum.</p>
+    </div>
+
+    
+
+</div>
+  </div>
+
